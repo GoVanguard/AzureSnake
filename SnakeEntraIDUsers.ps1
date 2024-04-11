@@ -1,18 +1,3 @@
-Write-host "   ___                                                               
- -   -_,                               -_-/              ,,         
-(  ~/||                               (_ /           _   ||         
-(  / ||  /\\ \\ \\ ,._-_  _-_        (_ --_  \\/\\  < \, ||/\  _-_  
- \/==||   /  || ||  ||   || \\         --_ ) || ||  /-|| ||_< || \\ 
- /_ _||  /\\ || ||  ||   ||/          _/  )) || || (( || || | ||/   
-(  - \\,  || \\/\\  \\,  \\,/        (_-_-   \\ \\  \/\\ \\,\ \\,/  
-          /                                                         
-         (,                                                         
-                                 
-                                                                     "
-
-# Connect to Entra ID
-Connect-AzureAd
-
 # Query 1: List all EntraID Users
 $query1Result = Get-AzureADUser -All $true
 
