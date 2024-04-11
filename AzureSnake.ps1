@@ -16,11 +16,12 @@ Write-host "   ___
          (,                                                         
                                  
                                                                      "
-    Write-Host "1: Setup and Authenticate "
-    Write-Host "2: Enumerate Virtual Machines, NICS, and Public IP Addresses"
-    Write-Host "3: Pull a list of Entra ID User Properties & Groups"
-    Write-Host "4: Enumerate Properties of BLOBs"
-    Write-Host "5: Enumerate Azure Applications & Associated Properties"
+    Write-Host "1: Install Libraries "
+    Write-Host "2: Authenticate "
+    Write-Host "3: Enumerate Virtual Machines, NICS, and Public IP Addresses"
+    Write-Host "4: Pull a list of Entra ID User Properties & Groups"
+    Write-Host "5: Enumerate Properties of BLOBs"
+    Write-Host "6: Enumerate Azure Applications & Associated Properties"
     # Add more options  if needed
     Write-Host "Q: Quit"
 
@@ -39,18 +40,22 @@ switch ($selection) {
         .\Setup.ps1
     }
     '2' {
+        # Invoke Script 2      
+        Connect-AzAccount
+    }
+    '3' {
         # Invoke Script 2
         .\SnakePublicIPs.ps1
     }
-    '3' {
+    '4' {
         # Invoke Script 3
         .\SnakeEntraIDUsers.ps1
     }
-    '4' {
+    '5' {
         # Invoke Script 3
         .\SnakeBlobEnum.ps1
     }
-    '5' {
+    '6' {
         # Invoke Script 3
         .\SnakeApplications.ps1
     }
