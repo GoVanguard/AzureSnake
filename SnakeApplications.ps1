@@ -1,17 +1,3 @@
-Write-host "   ___                                                               
- -   -_,                               -_-/              ,,         
-(  ~/||                               (_ /           _   ||         
-(  / ||  /\\ \\ \\ ,._-_  _-_        (_ --_  \\/\\  < \, ||/\  _-_  
- \/==||   /  || ||  ||   || \\         --_ ) || ||  /-|| ||_< || \\ 
- /_ _||  /\\ || ||  ||   ||/          _/  )) || || (( || || | ||/   
-(  - \\,  || \\/\\  \\,  \\,/        (_-_-   \\ \\  \/\\ \\,\ \\,/  
-          /                                                         
-         (,                                                         
-                                 
-                                                                     "
-# Authenticate to Azure (you may need to log in interactively or use service principal credentials)
-Connect-AzAccount
-
 # Get all Azure applications
 $allApplications = Get-AzureADApplication
 
