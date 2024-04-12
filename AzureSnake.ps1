@@ -44,19 +44,19 @@ switch ($selection) {
         Connect-AzAccount
     }
     '3' {
-        # Invoke Script 2
+        # Invoke Script 3
         .\SnakePublicIPs.ps1
     }
     '4' {
-        # Invoke Script 3
+        # Invoke Script 4
         .\SnakeEntraIDUsers.ps1
     }
     '5' {
-        # Invoke Script 3
+        # Invoke Script 5
         .\SnakeBlobEnum.ps1
     }
     '6' {
-        # Invoke Script 3
+        # Invoke Script 6
         .\SnakeApplications.ps1
     }
 
