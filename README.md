@@ -13,6 +13,6 @@ AzureSnake assists in automating the process of aggregating large amounts of dat
 5. Enumerate Properties of BLOBs
 6. Enumerate Azure Applications & Associated Properties
 
-**Note #1 - AzureSnake must be run from an Administrator PowerShell prompt or it will not function properly. **
+**Note #1 - AzureSnake must be run from an Administrator PowerShell prompt or it will not function properly.**
 
 **Note #2 -  The “Authenticate” option prompts an interactive login (which supports MFA) and only needs to be done once per session.**
